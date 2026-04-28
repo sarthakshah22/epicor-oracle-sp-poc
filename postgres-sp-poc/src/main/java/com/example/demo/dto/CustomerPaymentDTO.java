@@ -1,18 +1,14 @@
 package com.example.demo.dto;
 
-
-import java.sql.Timestamp;
-
-public class CustomerSummaryDTO {
+public class CustomerPaymentDTO {
 
     private int id;
     private String name;
-    private String city;
     private int totalOrders;
     private double totalAmount;
-    private Timestamp lastOrderDate;
+    private String status;
 
-    public CustomerSummaryDTO() {}
+    public CustomerPaymentDTO() {}
 
     public int getId() {
         return id;
@@ -28,14 +24,6 @@ public class CustomerSummaryDTO {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
     }
 
     public int getTotalOrders() {
@@ -54,11 +42,11 @@ public class CustomerSummaryDTO {
         this.totalAmount = totalAmount;
     }
 
-    public Timestamp getLastOrderDate() {
-        return lastOrderDate;
+    public String getStatus() {
+        return status;
     }
 
-    public void setLastOrderDate(Timestamp lastOrderDate) {
-        this.lastOrderDate = lastOrderDate;
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
